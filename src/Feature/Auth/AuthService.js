@@ -4,7 +4,7 @@ import axios from "axios";
 // const API = "https://authentication-2-qgze.onrender.com/api/user";
 const RegisterUserService = async (formdata) => {
   const response = await axios.post(
-    "https://authentication-2-qgze.onrender.com/api/user/register",
+    "https://authenticationeskills.vercel.app/api/user/register",
     formdata
   );
   localStorage.setItem("user", JSON.stringify(response.data));
@@ -15,7 +15,7 @@ const RegisterUserService = async (formdata) => {
 //login
 const loginuserservice = async (formdata) => {
   const response = await axios.post(
-    "https://authentication-2-qgze.onrender.com/api/user/login",
+    "https://authenticationeskills.vercel.app/api/user/login",
     formdata
   );
   localStorage.setItem("user", JSON.stringify(response.data));
