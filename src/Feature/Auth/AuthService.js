@@ -1,7 +1,7 @@
 import axios from "axios";
 
 //register
-const API = "/api/user";
+const API = "https://authentication-2-qgze.onrender.com/api/user";
 const RegisterUserService = async (formdata) => {
   const response = await axios.post(API + "/register", formdata);
   localStorage.setItem("user", JSON.stringify(response.data));
